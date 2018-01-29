@@ -14,9 +14,12 @@
 		5D7F010D1EE4617300CDB229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010B1EE4617300CDB229 /* Main.storyboard */; };
 		5D7F010F1EE4617300CDB229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010E1EE4617300CDB229 /* Assets.xcassets */; };
 		5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */; };
+		CF253C3594D714E45837FE5D /* libPods-kaisuo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E38973491E742EFFB8E68F8 /* libPods-kaisuo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E38973491E742EFFB8E68F8 /* libPods-kaisuo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kaisuo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0608B4CD193AA639FAABA9 /* Pods-kaisuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.release.xcconfig"; sourceTree = "<group>"; };
 		5D7F00FC1EE4617300CDB229 /* kaisuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaisuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F01001EE4617300CDB229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D7F01021EE4617300CDB229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		5D7F010E1EE4617300CDB229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D7F01111EE4617300CDB229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D7F01131EE4617300CDB229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66119CF7A5273F0F95CED438 /* Pods-kaisuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF253C3594D714E45837FE5D /* libPods-kaisuo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				5D7F00FE1EE4617300CDB229 /* kaisuo */,
 				5D7F00FD1EE4617300CDB229 /* Products */,
+				8B02F9FD5A213A2048E272A4 /* Pods */,
+				9F063C7C26EE7032301D66D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8B02F9FD5A213A2048E272A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66119CF7A5273F0F95CED438 /* Pods-kaisuo.debug.xcconfig */,
+				3B0608B4CD193AA639FAABA9 /* Pods-kaisuo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F063C7C26EE7032301D66D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E38973491E742EFFB8E68F8 /* libPods-kaisuo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D7F01161EE4617300CDB229 /* Build configuration list for PBXNativeTarget "kaisuo" */;
 			buildPhases = (
+				4EAD2C557EAC11C257BB2153 /* [CP] Check Pods Manifest.lock */,
 				5D7F00F81EE4617300CDB229 /* Sources */,
 				5D7F00F91EE4617300CDB229 /* Frameworks */,
 				5D7F00FA1EE4617300CDB229 /* Resources */,
+				BFF6AB2EE6D7DA4042E5D39B /* [CP] Embed Pods Frameworks */,
+				241C5EF1A12B111073D2670D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,6 +177,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		241C5EF1A12B111073D2670D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EAD2C557EAC11C257BB2153 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kaisuo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF6AB2EE6D7DA4042E5D39B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D7F00F81EE4617300CDB229 /* Sources */ = {
@@ -277,6 +359,7 @@
 		};
 		5D7F01171EE4617300CDB229 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66119CF7A5273F0F95CED438 /* Pods-kaisuo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3C98NCPWJ;
@@ -289,6 +372,7 @@
 		};
 		5D7F01181EE4617300CDB229 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0608B4CD193AA639FAABA9 /* Pods-kaisuo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3C98NCPWJ;
