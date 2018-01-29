@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  BLMainController.h
 //  kaisuo
 //
 //  Created by 苗壮 on 2017/6/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface BLMainController : UIViewController
 
 
 @end

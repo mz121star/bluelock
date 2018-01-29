@@ -7,32 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243B9CE2F21D20E069CBE50F /* libPods-kaisuo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C57A28182BE833AFD369770 /* libPods-kaisuo.a */; };
 		5D7F01011EE4617300CDB229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F01001EE4617300CDB229 /* main.m */; };
-		5D7F01041EE4617300CDB229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F01031EE4617300CDB229 /* AppDelegate.m */; };
-		5D7F01071EE4617300CDB229 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F01061EE4617300CDB229 /* FirstViewController.m */; };
-		5D7F010A1EE4617300CDB229 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F01091EE4617300CDB229 /* SecondViewController.m */; };
 		5D7F010D1EE4617300CDB229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010B1EE4617300CDB229 /* Main.storyboard */; };
 		5D7F010F1EE4617300CDB229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010E1EE4617300CDB229 /* Assets.xcassets */; };
 		5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */; };
-		CF253C3594D714E45837FE5D /* libPods-kaisuo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E38973491E742EFFB8E68F8 /* libPods-kaisuo.a */; };
+		5D7F011F1EE4619C00CDB229 /* libDHble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7F011C1EE4619C00CDB229 /* libDHble.a */; };
+		5D7F01221EE4702F00CDB229 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7F01211EE4702F00CDB229 /* CoreBluetooth.framework */; };
+		740F826D201EDE35009A01E4 /* BLPersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8262201EDE35009A01E4 /* BLPersonalController.m */; };
+		740F826E201EDE35009A01E4 /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8265201EDE35009A01E4 /* BLAppDelegate.m */; };
+		740F826F201EDE35009A01E4 /* BLMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F826A201EDE35009A01E4 /* BLMainController.m */; };
+		740F8276201EE06C009A01E4 /* BLLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8275201EE06C009A01E4 /* BLLoginController.m */; };
+		740F8279201EE077009A01E4 /* BLRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8278201EE077009A01E4 /* BLRegisterController.m */; };
+		740F8280201EE225009A01E4 /* XCNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F827E201EE225009A01E4 /* XCNetworkHandler.m */; };
+		740F8281201EE225009A01E4 /* XCNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F827F201EE225009A01E4 /* XCNetworkHelper.m */; };
+		740F8284201EE862009A01E4 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8283201EE862009A01E4 /* NullSafe.m */; };
+		740F8288201EE8DB009A01E4 /* XCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8286201EE8DB009A01E4 /* XCUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E38973491E742EFFB8E68F8 /* libPods-kaisuo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kaisuo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B0608B4CD193AA639FAABA9 /* Pods-kaisuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.release.xcconfig"; sourceTree = "<group>"; };
+		35E90E1CE21C0532D73832FC /* Pods-kaisuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.release.xcconfig"; sourceTree = "<group>"; };
 		5D7F00FC1EE4617300CDB229 /* kaisuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaisuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F01001EE4617300CDB229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5D7F01021EE4617300CDB229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5D7F01031EE4617300CDB229 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D7F01051EE4617300CDB229 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		5D7F01061EE4617300CDB229 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		5D7F01081EE4617300CDB229 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		5D7F01091EE4617300CDB229 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5D7F010C1EE4617300CDB229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D7F010E1EE4617300CDB229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D7F01111EE4617300CDB229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D7F01131EE4617300CDB229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66119CF7A5273F0F95CED438 /* Pods-kaisuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.debug.xcconfig"; sourceTree = "<group>"; };
+		5D7F011A1EE4619C00CDB229 /* DHBle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBle.h; sourceTree = "<group>"; };
+		5D7F011B1EE4619C00CDB229 /* keyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyObject.h; sourceTree = "<group>"; };
+		5D7F011C1EE4619C00CDB229 /* libDHble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDHble.a; sourceTree = "<group>"; };
+		5D7F011D1EE4619C00CDB229 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		5D7F011E1EE4619C00CDB229 /* OneKeyApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneKeyApi.h; sourceTree = "<group>"; };
+		5D7F01211EE4702F00CDB229 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6C57A28182BE833AFD369770 /* libPods-kaisuo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kaisuo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		740F8262201EDE35009A01E4 /* BLPersonalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPersonalController.m; sourceTree = "<group>"; };
+		740F8263201EDE35009A01E4 /* BLPersonalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPersonalController.h; sourceTree = "<group>"; };
+		740F8265201EDE35009A01E4 /* BLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
+		740F8269201EDE35009A01E4 /* BLMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainController.h; sourceTree = "<group>"; };
+		740F826A201EDE35009A01E4 /* BLMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainController.m; sourceTree = "<group>"; };
+		740F826C201EDE35009A01E4 /* BLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
+		740F8274201EE06C009A01E4 /* BLLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLLoginController.h; sourceTree = "<group>"; };
+		740F8275201EE06C009A01E4 /* BLLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLLoginController.m; sourceTree = "<group>"; };
+		740F8277201EE077009A01E4 /* BLRegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLRegisterController.h; sourceTree = "<group>"; };
+		740F8278201EE077009A01E4 /* BLRegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLRegisterController.m; sourceTree = "<group>"; };
+		740F827C201EE225009A01E4 /* XCNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNetworkHandler.h; sourceTree = "<group>"; };
+		740F827D201EE225009A01E4 /* XCNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNetworkHelper.h; sourceTree = "<group>"; };
+		740F827E201EE225009A01E4 /* XCNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNetworkHandler.m; sourceTree = "<group>"; };
+		740F827F201EE225009A01E4 /* XCNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNetworkHelper.m; sourceTree = "<group>"; };
+		740F8283201EE862009A01E4 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		740F8286201EE8DB009A01E4 /* XCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCUtils.m; sourceTree = "<group>"; };
+		740F8287201EE8DB009A01E4 /* XCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCUtils.h; sourceTree = "<group>"; };
+		CB1E8E8FB3E5D41185E9CA6B /* Pods-kaisuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF253C3594D714E45837FE5D /* libPods-kaisuo.a in Frameworks */,
+				5D7F01221EE4702F00CDB229 /* CoreBluetooth.framework in Frameworks */,
+				5D7F011F1EE4619C00CDB229 /* libDHble.a in Frameworks */,
+				243B9CE2F21D20E069CBE50F /* libPods-kaisuo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +79,8 @@
 			children = (
 				5D7F00FE1EE4617300CDB229 /* kaisuo */,
 				5D7F00FD1EE4617300CDB229 /* Products */,
-				8B02F9FD5A213A2048E272A4 /* Pods */,
-				9F063C7C26EE7032301D66D0 /* Frameworks */,
+				5D7F01201EE4702F00CDB229 /* Frameworks */,
+				6A42378FB637F2B567AA9FA0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,16 +95,12 @@
 		5D7F00FE1EE4617300CDB229 /* kaisuo */ = {
 			isa = PBXGroup;
 			children = (
-				5D7F01021EE4617300CDB229 /* AppDelegate.h */,
-				5D7F01031EE4617300CDB229 /* AppDelegate.m */,
-				5D7F01051EE4617300CDB229 /* FirstViewController.h */,
-				5D7F01061EE4617300CDB229 /* FirstViewController.m */,
-				5D7F01081EE4617300CDB229 /* SecondViewController.h */,
-				5D7F01091EE4617300CDB229 /* SecondViewController.m */,
+				740F825E201EDE35009A01E4 /* Classes */,
 				5D7F010B1EE4617300CDB229 /* Main.storyboard */,
 				5D7F010E1EE4617300CDB229 /* Assets.xcassets */,
 				5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */,
 				5D7F01131EE4617300CDB229 /* Info.plist */,
+				5D7F01191EE4619C00CDB229 /* DHble */,
 				5D7F00FF1EE4617300CDB229 /* Supporting Files */,
 			);
 			path = kaisuo;
@@ -91,21 +114,186 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8B02F9FD5A213A2048E272A4 /* Pods */ = {
+		5D7F01191EE4619C00CDB229 /* DHble */ = {
 			isa = PBXGroup;
 			children = (
-				66119CF7A5273F0F95CED438 /* Pods-kaisuo.debug.xcconfig */,
-				3B0608B4CD193AA639FAABA9 /* Pods-kaisuo.release.xcconfig */,
+				5D7F011A1EE4619C00CDB229 /* DHBle.h */,
+				5D7F011B1EE4619C00CDB229 /* keyObject.h */,
+				5D7F011C1EE4619C00CDB229 /* libDHble.a */,
+				5D7F011D1EE4619C00CDB229 /* LocationManager.h */,
+				5D7F011E1EE4619C00CDB229 /* OneKeyApi.h */,
+			);
+			path = DHble;
+			sourceTree = "<group>";
+		};
+		5D7F01201EE4702F00CDB229 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D7F01211EE4702F00CDB229 /* CoreBluetooth.framework */,
+				6C57A28182BE833AFD369770 /* libPods-kaisuo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A42378FB637F2B567AA9FA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E8E8FB3E5D41185E9CA6B /* Pods-kaisuo.debug.xcconfig */,
+				35E90E1CE21C0532D73832FC /* Pods-kaisuo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9F063C7C26EE7032301D66D0 /* Frameworks */ = {
+		740F825E201EDE35009A01E4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2E38973491E742EFFB8E68F8 /* libPods-kaisuo.a */,
+				740F827A201EE225009A01E4 /* Venders */,
+				740F8270201EE053009A01E4 /* Enroll */,
+				740F825F201EDE35009A01E4 /* Personal */,
+				740F8266201EDE35009A01E4 /* Main */,
+				740F826C201EDE35009A01E4 /* BLAppDelegate.h */,
+				740F8265201EDE35009A01E4 /* BLAppDelegate.m */,
 			);
-			name = Frameworks;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		740F825F201EDE35009A01E4 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				740F8260201EDE35009A01E4 /* Models */,
+				740F8261201EDE35009A01E4 /* Controllers */,
+				740F8264201EDE35009A01E4 /* Views */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		740F8260201EDE35009A01E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		740F8261201EDE35009A01E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				740F8263201EDE35009A01E4 /* BLPersonalController.h */,
+				740F8262201EDE35009A01E4 /* BLPersonalController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		740F8264201EDE35009A01E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		740F8266201EDE35009A01E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				740F8267201EDE35009A01E4 /* Models */,
+				740F8268201EDE35009A01E4 /* Controllers */,
+				740F826B201EDE35009A01E4 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		740F8267201EDE35009A01E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		740F8268201EDE35009A01E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				740F8269201EDE35009A01E4 /* BLMainController.h */,
+				740F826A201EDE35009A01E4 /* BLMainController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		740F826B201EDE35009A01E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		740F8270201EE053009A01E4 /* Enroll */ = {
+			isa = PBXGroup;
+			children = (
+				740F8271201EE053009A01E4 /* Models */,
+				740F8272201EE053009A01E4 /* Controllers */,
+				740F8273201EE053009A01E4 /* Views */,
+			);
+			path = Enroll;
+			sourceTree = "<group>";
+		};
+		740F8271201EE053009A01E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		740F8272201EE053009A01E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				740F8274201EE06C009A01E4 /* BLLoginController.h */,
+				740F8275201EE06C009A01E4 /* BLLoginController.m */,
+				740F8277201EE077009A01E4 /* BLRegisterController.h */,
+				740F8278201EE077009A01E4 /* BLRegisterController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		740F8273201EE053009A01E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		740F827A201EE225009A01E4 /* Venders */ = {
+			isa = PBXGroup;
+			children = (
+				740F8285201EE8DB009A01E4 /* Utils */,
+				740F8282201EE862009A01E4 /* NullSafe */,
+				740F827B201EE225009A01E4 /* Networking */,
+			);
+			path = Venders;
+			sourceTree = "<group>";
+		};
+		740F827B201EE225009A01E4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				740F827C201EE225009A01E4 /* XCNetworkHandler.h */,
+				740F827E201EE225009A01E4 /* XCNetworkHandler.m */,
+				740F827D201EE225009A01E4 /* XCNetworkHelper.h */,
+				740F827F201EE225009A01E4 /* XCNetworkHelper.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		740F8282201EE862009A01E4 /* NullSafe */ = {
+			isa = PBXGroup;
+			children = (
+				740F8283201EE862009A01E4 /* NullSafe.m */,
+			);
+			path = NullSafe;
+			sourceTree = "<group>";
+		};
+		740F8285201EE8DB009A01E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				740F8287201EE8DB009A01E4 /* XCUtils.h */,
+				740F8286201EE8DB009A01E4 /* XCUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,12 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D7F01161EE4617300CDB229 /* Build configuration list for PBXNativeTarget "kaisuo" */;
 			buildPhases = (
-				4EAD2C557EAC11C257BB2153 /* [CP] Check Pods Manifest.lock */,
+				DEB02E0ECE37CCEB496DDA32 /* [CP] Check Pods Manifest.lock */,
 				5D7F00F81EE4617300CDB229 /* Sources */,
 				5D7F00F91EE4617300CDB229 /* Frameworks */,
 				5D7F00FA1EE4617300CDB229 /* Resources */,
-				BFF6AB2EE6D7DA4042E5D39B /* [CP] Embed Pods Frameworks */,
-				241C5EF1A12B111073D2670D /* [CP] Copy Pods Resources */,
+				E4606DCC74A4845197C7DE68 /* [CP] Embed Pods Frameworks */,
+				02D71E1B0E3EF1444167D317 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,13 +325,19 @@
 		5D7F00F41EE4617300CDB229 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				CLASSPREFIX = BL;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "苗壮";
 				TargetAttributes = {
 					5D7F00FB1EE4617300CDB229 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X3C98NCPWJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -179,7 +373,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		241C5EF1A12B111073D2670D /* [CP] Copy Pods Resources */ = {
+		02D71E1B0E3EF1444167D317 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,7 +392,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4EAD2C557EAC11C257BB2153 /* [CP] Check Pods Manifest.lock */ = {
+		DEB02E0ECE37CCEB496DDA32 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,7 +410,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BFF6AB2EE6D7DA4042E5D39B /* [CP] Embed Pods Frameworks */ = {
+		E4606DCC74A4845197C7DE68 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,10 +432,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7F010A1EE4617300CDB229 /* SecondViewController.m in Sources */,
-				5D7F01041EE4617300CDB229 /* AppDelegate.m in Sources */,
-				5D7F01071EE4617300CDB229 /* FirstViewController.m in Sources */,
+				740F8288201EE8DB009A01E4 /* XCUtils.m in Sources */,
+				740F8280201EE225009A01E4 /* XCNetworkHandler.m in Sources */,
+				740F8281201EE225009A01E4 /* XCNetworkHelper.m in Sources */,
+				740F8284201EE862009A01E4 /* NullSafe.m in Sources */,
+				740F826F201EDE35009A01E4 /* BLMainController.m in Sources */,
+				740F826D201EDE35009A01E4 /* BLPersonalController.m in Sources */,
+				740F8276201EE06C009A01E4 /* BLLoginController.m in Sources */,
 				5D7F01011EE4617300CDB229 /* main.m in Sources */,
+				740F8279201EE077009A01E4 /* BLRegisterController.m in Sources */,
+				740F826E201EDE35009A01E4 /* BLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +477,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -285,7 +487,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -308,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +531,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -333,7 +541,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -350,7 +562,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -359,12 +571,17 @@
 		};
 		5D7F01171EE4617300CDB229 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66119CF7A5273F0F95CED438 /* Pods-kaisuo.debug.xcconfig */;
+			baseConfigurationReference = CB1E8E8FB3E5D41185E9CA6B /* Pods-kaisuo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3C98NCPWJ;
 				INFOPLIST_FILE = kaisuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/kaisuo/DHble",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dlwebs.kaisuo.kaisuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -372,12 +589,17 @@
 		};
 		5D7F01181EE4617300CDB229 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B0608B4CD193AA639FAABA9 /* Pods-kaisuo.release.xcconfig */;
+			baseConfigurationReference = 35E90E1CE21C0532D73832FC /* Pods-kaisuo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3C98NCPWJ;
 				INFOPLIST_FILE = kaisuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/kaisuo/DHble",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dlwebs.kaisuo.kaisuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -402,6 +624,7 @@
 				5D7F01181EE4617300CDB229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

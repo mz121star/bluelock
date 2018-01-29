@@ -1,18 +1,18 @@
 //
-//  AppDelegate.m
+//  BLAppDelegate.m
 //  kaisuo
 //
 //  Created by 苗壮 on 2017/6/4.
 //  Copyright © 2017年 苗壮. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "BLAppDelegate.h"
 
-@interface AppDelegate ()
+@interface BLAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation BLAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

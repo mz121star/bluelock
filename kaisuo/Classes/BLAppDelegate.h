@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  BLAppDelegate.h
 //  kaisuo
 //
 //  Created by 苗壮 on 2017/6/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface BLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
