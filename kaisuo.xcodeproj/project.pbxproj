@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		243B9CE2F21D20E069CBE50F /* libPods-kaisuo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C57A28182BE833AFD369770 /* libPods-kaisuo.a */; };
 		5D7F01011EE4617300CDB229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F01001EE4617300CDB229 /* main.m */; };
-		5D7F010D1EE4617300CDB229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010B1EE4617300CDB229 /* Main.storyboard */; };
 		5D7F010F1EE4617300CDB229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010E1EE4617300CDB229 /* Assets.xcassets */; };
 		5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */; };
 		5D7F011F1EE4619C00CDB229 /* libDHble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7F011C1EE4619C00CDB229 /* libDHble.a */; };
@@ -23,6 +22,10 @@
 		740F8281201EE225009A01E4 /* XCNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F827F201EE225009A01E4 /* XCNetworkHelper.m */; };
 		740F8284201EE862009A01E4 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8283201EE862009A01E4 /* NullSafe.m */; };
 		740F8288201EE8DB009A01E4 /* XCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F8286201EE8DB009A01E4 /* XCUtils.m */; };
+		740F828920204AD1009A01E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010B1EE4617300CDB229 /* Main.storyboard */; };
+		740F828C2020561A009A01E4 /* BLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F828B2020561A009A01E4 /* BLBaseModel.m */; };
+		740F828F20205761009A01E4 /* Enrollment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740F828D20205761009A01E4 /* Enrollment.storyboard */; };
+		740F829220205D63009A01E4 /* BLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F829120205D63009A01E4 /* BLUserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,11 @@
 		740F8283201EE862009A01E4 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		740F8286201EE8DB009A01E4 /* XCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCUtils.m; sourceTree = "<group>"; };
 		740F8287201EE8DB009A01E4 /* XCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCUtils.h; sourceTree = "<group>"; };
+		740F828A2020561A009A01E4 /* BLBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLBaseModel.h; sourceTree = "<group>"; };
+		740F828B2020561A009A01E4 /* BLBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLBaseModel.m; sourceTree = "<group>"; };
+		740F828E20205761009A01E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Enrollment.storyboard; sourceTree = "<group>"; };
+		740F829020205D63009A01E4 /* BLUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLUserModel.h; sourceTree = "<group>"; };
+		740F829120205D63009A01E4 /* BLUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLUserModel.m; sourceTree = "<group>"; };
 		CB1E8E8FB3E5D41185E9CA6B /* Pods-kaisuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +105,7 @@
 			children = (
 				740F825E201EDE35009A01E4 /* Classes */,
 				5D7F010B1EE4617300CDB229 /* Main.storyboard */,
+				740F828D20205761009A01E4 /* Enrollment.storyboard */,
 				5D7F010E1EE4617300CDB229 /* Assets.xcassets */,
 				5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */,
 				5D7F01131EE4617300CDB229 /* Info.plist */,
@@ -203,6 +212,8 @@
 		740F8267201EDE35009A01E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				740F828A2020561A009A01E4 /* BLBaseModel.h */,
+				740F828B2020561A009A01E4 /* BLBaseModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +247,8 @@
 		740F8271201EE053009A01E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				740F829020205D63009A01E4 /* BLUserModel.h */,
+				740F829120205D63009A01E4 /* BLUserModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,7 +344,7 @@
 				TargetAttributes = {
 					5D7F00FB1EE4617300CDB229 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = X3C98NCPWJ;
+						DevelopmentTeam = TEHUHD2DQV;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -364,9 +377,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740F828F20205761009A01E4 /* Enrollment.storyboard in Resources */,
+				740F828920204AD1009A01E4 /* Main.storyboard in Resources */,
 				5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */,
 				5D7F010F1EE4617300CDB229 /* Assets.xcassets in Resources */,
-				5D7F010D1EE4617300CDB229 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +448,11 @@
 			files = (
 				740F8288201EE8DB009A01E4 /* XCUtils.m in Sources */,
 				740F8280201EE225009A01E4 /* XCNetworkHandler.m in Sources */,
+				740F828C2020561A009A01E4 /* BLBaseModel.m in Sources */,
 				740F8281201EE225009A01E4 /* XCNetworkHelper.m in Sources */,
 				740F8284201EE862009A01E4 /* NullSafe.m in Sources */,
 				740F826F201EDE35009A01E4 /* BLMainController.m in Sources */,
+				740F829220205D63009A01E4 /* BLUserModel.m in Sources */,
 				740F826D201EDE35009A01E4 /* BLPersonalController.m in Sources */,
 				740F8276201EE06C009A01E4 /* BLLoginController.m in Sources */,
 				5D7F01011EE4617300CDB229 /* main.m in Sources */,
@@ -462,6 +478,14 @@
 				5D7F01111EE4617300CDB229 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		740F828D20205761009A01E4 /* Enrollment.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740F828E20205761009A01E4 /* Base */,
+			);
+			name = Enrollment.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -574,7 +598,7 @@
 			baseConfigurationReference = CB1E8E8FB3E5D41185E9CA6B /* Pods-kaisuo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X3C98NCPWJ;
+				DEVELOPMENT_TEAM = TEHUHD2DQV;
 				INFOPLIST_FILE = kaisuo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -592,7 +616,7 @@
 			baseConfigurationReference = 35E90E1CE21C0532D73832FC /* Pods-kaisuo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X3C98NCPWJ;
+				DEVELOPMENT_TEAM = TEHUHD2DQV;
 				INFOPLIST_FILE = kaisuo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

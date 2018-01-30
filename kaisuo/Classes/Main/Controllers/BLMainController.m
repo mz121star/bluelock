@@ -9,6 +9,7 @@
 #import "BLMainController.h"
 #import "BLLoginController.h"
 #import "OneKeyApi.h"
+#import "BLAppDelegate.h"
 
 @interface BLMainController ()<YYlockApiDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scroll;
@@ -59,18 +60,17 @@
     [UIView animateWithDuration:0.3 animations:^{
         self.scroll.contentOffset = offset;
     }];
-  
-#warning - Only for testing, please remove this method below unitl done!
-    /**
-     @warning 测试接口用
-     业务逻辑不清楚，发完请求测通后请删掉……
-     */
-    // 弹登录页
+   
+}
+
+- (IBAction)loginButtonAction:(UIButton *)sender {
     [self presentLoginViewController];
 }
 
 - (void)presentLoginViewController {
-    BLLoginController *loginVC = [BLLoginController new];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Enrollment" bundle:nil];
+    BLLoginController *loginVC = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([BLLoginController class])];
+    
     [self presentViewController:loginVC animated:YES completion:nil];
 }
 
@@ -144,6 +144,7 @@
 - (IBAction)kaisuoAction:(UIButton *)sender {
     [OneKeyApi shareInstance].delegate = self;
     [self.peripheralArray removeAllObjects];
+    
     
     [[OneKeyApi shareInstance] scanDeviceWithUUID:2.0f];
     

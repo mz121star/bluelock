@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BLBaseModel.h"
+#import <MJExtension/MJExtension.h>
 #import "XCNetworkHelper.h"
 
 @interface XCNetworkHandler : NSObject

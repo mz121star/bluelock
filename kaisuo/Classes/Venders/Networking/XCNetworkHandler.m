@@ -32,7 +32,8 @@ static AFHTTPSessionManager *kSessionManager = nil;
                            initWithBaseURL:[NSURL URLWithString:baseURLString]];
     }
     //kSessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
-    //kSessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
+    kSessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    kSessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
     kSessionManager.requestSerializer.timeoutInterval = 30;
     kSessionManager.responseSerializer.acceptableContentTypes =
     [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
@@ -63,22 +64,13 @@ static AFHTTPSessionManager *kSessionManager = nil;
          NSLog(@"%@", uploadProgress);
      } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
          
-//         RDBaseModel *model = [RDBaseModel mj_objectWithKeyValues:responseObject];
-//         // 回调给controller
-//         if (!model.code.integerValue) { // code == 0 成功
-//             NSLog(@"成功给的数据====%@", model.data);
-//             if (model.token) {
-//                 [UserInfo userToken:model.token];
-//             }
-//             !successCallback ? : successCallback(model.data);
-//         } else {
-//             NSLog(@"服务器返回的错误信息：%@", model.msg);
-//             // 如果token实效，用户退出登录。
-//             if ([model.msg isEqualToString:@"token不存在"]) {
-//                 [self invalidUserInfoAlert];
-//             }
-//             !failureCallback ? : failureCallback(model.msg);
-//         }
+         if ([responseObject[@"status"] integerValue] == 1) {
+             !successCallback ? : successCallback(responseObject);
+         } else {
+             !failureCallback ? : failureCallback(responseObject);
+         }
+         
+
      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
          
          NSLog(@"500之后给出的信息：%@", error.localizedDescription);
