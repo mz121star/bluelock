@@ -10,16 +10,21 @@
 #import "BLLoginController.h"
 #import "OneKeyApi.h"
 #import "BLAppDelegate.h"
+#import "BLAvailableLocksCell.h"
 
-@interface BLMainController ()<YYlockApiDelegate>
+@interface BLMainController ()<YYlockApiDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scroll;
-@property (weak, nonatomic) IBOutlet UIImageView *huandengpian;
+//@property (weak, nonatomic) IBOutlet UIImageView *huandengpian;
 @property (weak, nonatomic) IBOutlet UITableView *deviceTableView;
+@property (copy, nonatomic) NSArray *devices;
+@property (weak, nonatomic) IBOutlet UIButton *unlockButton;
 
 /** 设备id */
 @property (nonatomic, retain) NSMutableArray *peripheralArray;
 @property (nonatomic) BOOL isFirstLauch;
 @end
+
+static NSString *kDeviceCellID = @"MainControllerDeviceCellID";
 
 @implementation BLMainController
 
@@ -60,7 +65,24 @@
     [UIView animateWithDuration:0.3 animations:^{
         self.scroll.contentOffset = offset;
     }];
+    
+    // 注册 cell xib
+    NSString *cellClassName = NSStringFromClass([BLAvailableLocksCell class]);
+    [self.deviceTableView registerNib:[UINib nibWithNibName:cellClassName bundle:nil/*这里写nil就是默认[UIBundle mainBundle]*/] forCellReuseIdentifier:kDeviceCellID];
+    // 简易方法干掉底部多余的空白cell。
+    self.deviceTableView.tableFooterView = [UIView new];
+    
+    // 初始化锁列表数组（不可变数组，服务器获取的数组可能需要转化一下格式。）
+    self.devices = @[];
    
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // 开锁按钮设置了自适应，不能写固定数值的圆角了。
+    CGFloat unlockButtonHeight = self.unlockButton.frame.size.height;
+    self.unlockButton.layer.cornerRadius = unlockButtonHeight / 2;
+    self.unlockButton.layer.masksToBounds = YES;
 }
 
 - (IBAction)loginButtonAction:(UIButton *)sender {
@@ -162,4 +184,32 @@
     headview.image = images;
 }
 
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // 这里要根据你服务器返回的锁的数量来返回对应的列表数量。
+    // 我就简单的用 self.devices 代表了。
+    // return self.devices.count;
+    return 4;
+}
+
+- (__kindof UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BLAvailableLocksCell *cell = [tableView dequeueReusableCellWithIdentifier:kDeviceCellID forIndexPath:indexPath];
+    // 这里有一种是带indexPath的，另一种是不带的。在viewDidLoad中注册cell的就用当前这种带indexPath写法。
+    // 然后根据返回的锁的名称给每个cell赋值。
+    // [cell updateCellWithModel:self.devices[indexPath.row]];
+    // 因为还没有数据，也没有给数据变成model，你就直接给cell赋值就好了。
+    cell.lockNameLabel.text = @"啥？";
+    cell.lockSwitch.on = YES;
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {return 1;}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {return 44;}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];// 按一下之后立刻反选。
+    // 或者要push某些页面，在这里操作。
+    // 如果要禁止cell点击， 不在这里操作。在tableview的设置里操作。
+}
 @end

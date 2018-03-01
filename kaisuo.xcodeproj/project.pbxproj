@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		243B9CE2F21D20E069CBE50F /* libPods-kaisuo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C57A28182BE833AFD369770 /* libPods-kaisuo.a */; };
 		5D40D15E2047BA01001355E1 /* KCStatusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D40D15D2047BA01001355E1 /* KCStatusTableViewCell.m */; };
-		5D40D1602047CDD0001355E1 /* Lockcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D40D15F2047CDD0001355E1 /* Lockcell.xib */; };
 		5D7F01011EE4617300CDB229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F01001EE4617300CDB229 /* main.m */; };
 		5D7F010F1EE4617300CDB229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010E1EE4617300CDB229 /* Assets.xcassets */; };
 		5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */; };
@@ -28,13 +27,15 @@
 		740F828C2020561A009A01E4 /* BLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F828B2020561A009A01E4 /* BLBaseModel.m */; };
 		740F828F20205761009A01E4 /* Enrollment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740F828D20205761009A01E4 /* Enrollment.storyboard */; };
 		740F829220205D63009A01E4 /* BLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F829120205D63009A01E4 /* BLUserModel.m */; };
+		747D83682047D07D00B5DC7A /* BLAvailableLocksCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 747D83662047D07D00B5DC7A /* BLAvailableLocksCell.m */; };
+		747D83692047D07D00B5DC7A /* BLAvailableLocksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 747D83672047D07D00B5DC7A /* BLAvailableLocksCell.xib */; };
+		747D836C2047D6B000B5DC7A /* BLAvailableLocksModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 747D836B2047D6B000B5DC7A /* BLAvailableLocksModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35E90E1CE21C0532D73832FC /* Pods-kaisuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.release.xcconfig"; sourceTree = "<group>"; };
 		5D40D15C2047BA01001355E1 /* KCStatusTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCStatusTableViewCell.h; sourceTree = "<group>"; };
 		5D40D15D2047BA01001355E1 /* KCStatusTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCStatusTableViewCell.m; sourceTree = "<group>"; };
-		5D40D15F2047CDD0001355E1 /* Lockcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Lockcell.xib; sourceTree = "<group>"; };
 		5D7F00FC1EE4617300CDB229 /* kaisuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaisuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F01001EE4617300CDB229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D7F010C1EE4617300CDB229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +71,11 @@
 		740F828E20205761009A01E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Enrollment.storyboard; sourceTree = "<group>"; };
 		740F829020205D63009A01E4 /* BLUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLUserModel.h; sourceTree = "<group>"; };
 		740F829120205D63009A01E4 /* BLUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLUserModel.m; sourceTree = "<group>"; };
+		747D83652047D07D00B5DC7A /* BLAvailableLocksCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAvailableLocksCell.h; sourceTree = "<group>"; };
+		747D83662047D07D00B5DC7A /* BLAvailableLocksCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAvailableLocksCell.m; sourceTree = "<group>"; };
+		747D83672047D07D00B5DC7A /* BLAvailableLocksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLAvailableLocksCell.xib; sourceTree = "<group>"; };
+		747D836A2047D6B000B5DC7A /* BLAvailableLocksModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAvailableLocksModel.h; sourceTree = "<group>"; };
+		747D836B2047D6B000B5DC7A /* BLAvailableLocksModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAvailableLocksModel.m; sourceTree = "<group>"; };
 		CB1E8E8FB3E5D41185E9CA6B /* Pods-kaisuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +116,6 @@
 			children = (
 				740F825E201EDE35009A01E4 /* Classes */,
 				5D7F010B1EE4617300CDB229 /* Main.storyboard */,
-				5D40D15F2047CDD0001355E1 /* Lockcell.xib */,
 				740F828D20205761009A01E4 /* Enrollment.storyboard */,
 				5D7F010E1EE4617300CDB229 /* Assets.xcassets */,
 				5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */,
@@ -220,6 +225,8 @@
 			children = (
 				740F828A2020561A009A01E4 /* BLBaseModel.h */,
 				740F828B2020561A009A01E4 /* BLBaseModel.m */,
+				747D836A2047D6B000B5DC7A /* BLAvailableLocksModel.h */,
+				747D836B2047D6B000B5DC7A /* BLAvailableLocksModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +243,9 @@
 		740F826B201EDE35009A01E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				747D83652047D07D00B5DC7A /* BLAvailableLocksCell.h */,
+				747D83662047D07D00B5DC7A /* BLAvailableLocksCell.m */,
+				747D83672047D07D00B5DC7A /* BLAvailableLocksCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,7 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D40D1602047CDD0001355E1 /* Lockcell.xib in Resources */,
+				747D83692047D07D00B5DC7A /* BLAvailableLocksCell.xib in Resources */,
 				740F828F20205761009A01E4 /* Enrollment.storyboard in Resources */,
 				740F828920204AD1009A01E4 /* Main.storyboard in Resources */,
 				5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */,
@@ -408,8 +418,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,6 +477,8 @@
 				740F8276201EE06C009A01E4 /* BLLoginController.m in Sources */,
 				5D7F01011EE4617300CDB229 /* main.m in Sources */,
 				740F8279201EE077009A01E4 /* BLRegisterController.m in Sources */,
+				747D836C2047D6B000B5DC7A /* BLAvailableLocksModel.m in Sources */,
+				747D83682047D07D00B5DC7A /* BLAvailableLocksCell.m in Sources */,
 				740F826E201EDE35009A01E4 /* BLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
