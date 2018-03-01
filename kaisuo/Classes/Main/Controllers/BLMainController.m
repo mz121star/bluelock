@@ -71,7 +71,7 @@
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Enrollment" bundle:nil];
     BLLoginController *loginVC = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([BLLoginController class])];
     
-    [self presentViewController:loginVC animated:YES completion:nil];
+    [self presentViewController:loginVC animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		243B9CE2F21D20E069CBE50F /* libPods-kaisuo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C57A28182BE833AFD369770 /* libPods-kaisuo.a */; };
+		5D40D15E2047BA01001355E1 /* KCStatusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D40D15D2047BA01001355E1 /* KCStatusTableViewCell.m */; };
+		5D40D1602047CDD0001355E1 /* Lockcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D40D15F2047CDD0001355E1 /* Lockcell.xib */; };
 		5D7F01011EE4617300CDB229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F01001EE4617300CDB229 /* main.m */; };
 		5D7F010F1EE4617300CDB229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F010E1EE4617300CDB229 /* Assets.xcassets */; };
 		5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */; };
@@ -30,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		35E90E1CE21C0532D73832FC /* Pods-kaisuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaisuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kaisuo/Pods-kaisuo.release.xcconfig"; sourceTree = "<group>"; };
+		5D40D15C2047BA01001355E1 /* KCStatusTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCStatusTableViewCell.h; sourceTree = "<group>"; };
+		5D40D15D2047BA01001355E1 /* KCStatusTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCStatusTableViewCell.m; sourceTree = "<group>"; };
+		5D40D15F2047CDD0001355E1 /* Lockcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Lockcell.xib; sourceTree = "<group>"; };
 		5D7F00FC1EE4617300CDB229 /* kaisuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaisuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F01001EE4617300CDB229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D7F010C1EE4617300CDB229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 			children = (
 				740F825E201EDE35009A01E4 /* Classes */,
 				5D7F010B1EE4617300CDB229 /* Main.storyboard */,
+				5D40D15F2047CDD0001355E1 /* Lockcell.xib */,
 				740F828D20205761009A01E4 /* Enrollment.storyboard */,
 				5D7F010E1EE4617300CDB229 /* Assets.xcassets */,
 				5D7F01101EE4617300CDB229 /* LaunchScreen.storyboard */,
@@ -305,6 +311,8 @@
 			children = (
 				740F8287201EE8DB009A01E4 /* XCUtils.h */,
 				740F8286201EE8DB009A01E4 /* XCUtils.m */,
+				5D40D15C2047BA01001355E1 /* KCStatusTableViewCell.h */,
+				5D40D15D2047BA01001355E1 /* KCStatusTableViewCell.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -377,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D40D1602047CDD0001355E1 /* Lockcell.xib in Resources */,
 				740F828F20205761009A01E4 /* Enrollment.storyboard in Resources */,
 				740F828920204AD1009A01E4 /* Main.storyboard in Resources */,
 				5D7F01121EE4617300CDB229 /* LaunchScreen.storyboard in Resources */,
@@ -399,7 +408,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,6 +459,7 @@
 				740F8288201EE8DB009A01E4 /* XCUtils.m in Sources */,
 				740F8280201EE225009A01E4 /* XCNetworkHandler.m in Sources */,
 				740F828C2020561A009A01E4 /* BLBaseModel.m in Sources */,
+				5D40D15E2047BA01001355E1 /* KCStatusTableViewCell.m in Sources */,
 				740F8281201EE225009A01E4 /* XCNetworkHelper.m in Sources */,
 				740F8284201EE862009A01E4 /* NullSafe.m in Sources */,
 				740F826F201EDE35009A01E4 /* BLMainController.m in Sources */,
@@ -606,6 +617,34 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/kaisuo/DHble",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"HexColors\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dlwebs.kaisuo.kaisuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -623,6 +662,34 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/kaisuo/DHble",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"HexColors\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dlwebs.kaisuo.kaisuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

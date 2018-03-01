@@ -13,7 +13,7 @@
 @property (nonatomic, copy) NSString *deviceId;
 @property (nonatomic, copy) NSString *deviceName;
 @property (nonatomic, copy) NSString *devicePSW;
-
+@property (nonatomic, copy) NSString *deviceImg;
 @end
 
 @interface BLResidentialModel : BLBaseModel

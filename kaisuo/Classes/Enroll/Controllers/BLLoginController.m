@@ -19,7 +19,7 @@
 
 @implementation BLLoginController
 - (IBAction)closeViewController:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 - (IBAction)loginButtonAction:(UIButton *)sender {
     
@@ -54,10 +54,15 @@
                           
                           NSLog(@"设备列表：%@", userModel.devices);
                           if (userModel.devices.count) {
-                              BLDeviceModel *device = userModel.devices[0];
-                              NSLog(@"设备ID：%@", device.deviceId);
-                              NSLog(@"设备名称：%@", device.deviceName);
-                              NSLog(@"设备密码：%@", device.devicePSW);
+//                              BLDeviceModel *device = userModel.devices[0];
+//                              NSLog(@"设备ID：%@", device.deviceId);
+//                              NSLog(@"设备名称：%@", device.deviceName);
+//                              NSLog(@"设备密码：%@", device.devicePSW);
+                              for(BLDeviceModel *device in userModel.devices){
+                                  NSLog(@"设备ID：%@", device.deviceId);
+                                  NSLog(@"设备名称：%@", device.deviceName);
+                                  NSLog(@"设备密码：%@", device.devicePSW);
+                              }
                           }
                           
                           
